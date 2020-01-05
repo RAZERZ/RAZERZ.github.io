@@ -66,10 +66,16 @@ a {
     padding: 1%;
 }
 
-.mostPop ul {
+.personalSelect ul li {
+    height: 140px;
 }
 
-.mostPop ul li {
+.mostPop h2, .personalSelect h2 {
+    width: 100%;
+    float: left;
+}
+
+.mostPop ul li, .personalSelect ul li {
     display: block;
     margin-bottom: 2%;
     width: 30%;
@@ -82,15 +88,16 @@ a {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.mostPop ul li .projHeaders {
+.mostPop ul li .projHeaders, .personalSelect ul li .projHeaders {
     display: inline-block;
     font-weight: bolder;
     font-size: 1.1em;
     margin-bottom: 3%;
     margin-right: 0;
+    margin-left: 0;
 }
 
-.mostPop ul li span {
+.mostPop ul li span, .personalSelect ul li span {
     margin-left: 3%;
 }
 
