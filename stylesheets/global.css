@@ -49,6 +49,12 @@ a {
     line-height: 50px;
     font-weight: 800;
     background: #2f2f2f;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     -webkit-transition: ease 0.4s;
     -moz-transition: ease 0.4s;
     -ms-transition: ease 0.4s;
