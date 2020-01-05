@@ -19,3 +19,7 @@ function pgProjects() {
         createProjList(document.getElementsByClassName("mostPop")[0].children[1], getPopularProjects(projectsList)[i]);
     }
 }
+
+function pgAbout() {
+    contentContainer.innerHTML = getHtmlCont("about");
+}
