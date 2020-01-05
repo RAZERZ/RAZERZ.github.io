@@ -19,43 +19,31 @@
     <script src="scripts/global.js"></script>
 
     <h1 class="whoAmI">Rami Abou Zahra</h1>
-    <div id="navBar">
-        <a href="#">
-            <div class="navChild">
-                <span>Projects</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="navChild">
-                <span>Contributions</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="navChild">
-                <span>Hacking</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="navChild">
-                <span>Contact</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="navChild">
-                <span>About</span>
-            </div>
-        </a>
+    <div id="navBar" onclick="pgProjects()">
+        <div class="navChild">
+            <span>Projects</span>
+        </div>
+        <div class="navChild" onclick="">
+            <span>Contributions</span>
+        </div>
+        <div class="navChild" onclick="">
+            <span>Hacking</span>
+        </div>
+        <div class="navChild" onclick="">
+            <span>Contact</span>
+        </div>
+        <div class="navChild" onclick="">
+            <span>About</span>
+        </div>
     </div>
     <div id="main">
         <div class="contentContainer">
-            <div class="mostPop">
-                <h2>Most popular projects:</h2>
-                <ul></ul>
-            </div>
         </div>
     </div>
+
 </body>
 <footer>
+    <script src="scripts/events.js"></script>
     <script src="scripts/footer.js"></script>
 </footer>
 </html>
