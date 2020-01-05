@@ -6,3 +6,37 @@ body {
     background: #212121;
     color: white;
 }
+
+hr {
+    color: white;
+}
+
+.whoAmI {
+    text-align: center;
+    opacity: 1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.whoAmI.softwareDev {
+    -webkit-animation: textTransition 2s;
+    -o-animation: textTransition 2s;
+    animation: textTransition 2s;
+}
+
+@keyframes textTransition {
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
