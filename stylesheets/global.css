@@ -45,7 +45,7 @@ a {
 #navBar .navChild {
     display: inline-block;
     padding: 0 1%;
-    font-size: 1.3vw;
+    font-size: 1.1em;
     line-height: 50px;
     font-weight: 800;
     background: #2f2f2f;
@@ -175,6 +175,12 @@ a {
 
 .timeLineContent.bottom {
     margin-top: 80px;
+}
+
+@media screen and (max-width: 518px) {
+    #navBar .navChild {
+        font-size: 0.7em;
+    }
 }
 
 @keyframes textTransition {
