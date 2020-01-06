@@ -7,7 +7,17 @@ function getHtmlCont(module) {
     return xmlHttp.responseText;
 }
 
-function pgProjects() {
+function clearActiveStatus() {
+    var navChildren = document.getElementsByClassName("navChild");
+
+    for(var i = 0; navChildren.length > i; i++) {
+        navChildren[i].setAttribute("class", "navChild");
+    }
+}
+
+function pgProjects(el) {
+    clearActiveStatus()
+    el.setAttribute("class", "navChild active");
     contentContainer.innerHTML = getHtmlCont("projects");
     createProjList(document.getElementsByClassName("personalSelect")[0].children[1],22, 1, "<br>Ticketing system for a local computer store. Eased their workflow and enabled backups.");
     createProjList(document.getElementsByClassName("personalSelect")[0].children[1],18, 1, "<br>Installation script for pwnpi that simplified the installation process. The community found the installation process complicated.");
@@ -20,11 +30,21 @@ function pgProjects() {
     }
 }
 
-function pgAbout() {
+function pgAbout(el) {
+    clearActiveStatus()
+    el.setAttribute("class", "navChild active");
     contentContainer.innerHTML = getHtmlCont("about");
     getBday();
 }
 
-function pgContributions() {
+function pgContributions(el) {
+    clearActiveStatus()
+    el.setAttribute("class", "navChild active");
     contentContainer.innerHTML = getHtmlCont("contributions");
+}
+
+function pgContact(el) {
+    clearActiveStatus()
+    el.setAttribute("class", "navChild active");
+    contentContainer.innerHTML = getHtmlCont("contact")
 }
