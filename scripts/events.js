@@ -22,4 +22,9 @@ function pgProjects() {
 
 function pgAbout() {
     contentContainer.innerHTML = getHtmlCont("about");
+    getBday();
+}
+
+function pgContributions() {
+    contentContainer.innerHTML = getHtmlCont("contributions");
 }

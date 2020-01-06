@@ -96,3 +96,8 @@ function createProjList(parentElement, index, isDesc, desc) {
     }
     parentElement.appendChild(listEl);
 }
+
+function getBday() {
+var year = new Date(new Date() - new Date("2002-04-28")).getFullYear() - 1970;
+document.getElementsByClassName("currAge")[0].innerHTML = year;
+}
