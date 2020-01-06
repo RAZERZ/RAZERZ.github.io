@@ -13,6 +13,7 @@
     <!-- Scripts -->
 
     <script src="scripts/header.js"></script>
+    <script>window.onload = function () {pgAbout(document.getElementsByClassName("navChild")[4])}</script>
 
 </head>
 <body>
@@ -27,8 +28,8 @@
         <div class="navChild" onclick="pgContributions(this)">
             <span>Contributions</span>
         </div>
-        <div class="navChild" onclick="">
-            <span>Hacking</span>
+        <div class="navChild" onclick="pgIdeas(this)">
+            <span>Ideas</span>
         </div>
         <div class="navChild" onclick="pgContact(this)">
             <span>Contact</span>

@@ -48,3 +48,9 @@ function pgContact(el) {
     el.setAttribute("class", "navChild active");
     contentContainer.innerHTML = getHtmlCont("contact")
 }
+
+function pgIdeas(el) {
+    clearActiveStatus()
+    el.setAttribute("class", "navChild active");
+    contentContainer.innerHTML = getHtmlCont("ideas");
+}
