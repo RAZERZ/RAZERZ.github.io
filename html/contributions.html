@@ -1,12 +1,27 @@
 <div class="contributionsContainer">
     <style>
         .contributionsContainer h2 {
+            width: 100%;
+            display: inline-block;
+            margin-top: 3%;
             font-size: 1.1em;
+        }
+        
+        .contributionsContainer a {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 930px) {
+            .contributionsContainer img {
+                width: 100% !important;
+                margin-left: 0 !important;
+                margin-bottom: 4%;
+            }
         }
     </style>
     <h1>How have I contributed back?</h1>
     <p>Because of my diverse interests, I have set foot in many communities and met a lot of different people.</p>
-    <p>Let't take a quick look at how I have contributed back to these communities.</p>
+    <p>Let't take a quick look at how I have used my programming skills to contribute back to these communities.</p>
 
     <h2>XDA-Developers</h2>
     <p>This is where my programming career really took off. XDA served me with a lot of custom modifications and support until one day I asked myself how to reverse it.</p>
@@ -15,7 +30,24 @@
     <p>One thing that intrigued me was how custom operating systems could be flashed onto devices, and I wanted to try and make my own and share it with the community.</p>
     <p>On this journey, I discovered the dark secrets of the C language that I wish 15 year old me never saw but I was hooked.</p>
     <p>Couple of months later, while waiting for my plane at my airport and compiling the ROM, I got my first ever "Success!" after months of troubleshooting.</p>
-    <img style="max-width: 30%; float: right; margin-left: 2%;" src="extras/Personal/ramiabouzahra_20200106_2.jpg">
+    <a title="It works!" href="extras/Personal/ramiabouzahra_20200106_2.jpg"><img style="width: 30%; height: auto; float: right; margin-left: 2%;" src="extras/Personal/ramiabouzahra_20200106_2.jpg"></a>
     <p>I can't find the  picture of the success code but this picture was the best I could find. I wish I had a picture of my priceless expression. I flashed the ROM on my phone while still att the airport and everything was working.</p>
     <p>I had never felt so successful ever before, and knew by then that this was the "kick" I shall follow.</p>
+
+    <h2>Raspberry Pi</h2>
+    <p>After I started checking out operating systems development, I was bound to get a RPI, and I did!</p>
+    <p>I had never had so much fun with a computer before because I wasn't afraid of messing up. If I messed something up with the software I could easily start of with a fresh reinstall and if I messed something up with the hardware, well, the thing only costs 35$...</p>
+    <p>Since I previously had to bypass Samsungs Knox security, I grew a little fond of "hacking" so I started looking for ways I could use my RPI to start learning.</p>
+    <p>I picked up a few WiFi cards that were pretty good when it came to packet injection (wink wink) and got back to work.</p>
+    <p>I found a very flexible and good OS for this, Backtrack 5 (called Kali linux today) but it didn't quite have what I was looking for. I was looking for a small package that packs a punch. That's when I found <a href="http://pwnpi.sourceforge.net/">pwnpi</a>.</p>
+    <p>However, the installation was very complicated and it required multiple steps to update date and time and to even get the keyboard working. I knew that someone with less skills would not be able to research and figure this out, so I gave back by writing a little install script (which became one of my most famous repositories on Github)</p>
+    <p>I later stopped hacking (unless I really need to) because people starting asking for crazy favours such as "could you hack facebook or Google?"</p>
+    <p>Via an old 250GB hard drive, I turned the RPI into an FTP server as well as a database host for my projects. It was challenging nonetheless to set it up as a server, but I am glad I got something out of it.</p>
+
+    <h2>Flight Simulation</h2>
+    <p>Aviation has always been my true passion and motivation which is why I decided to join thousands of others via flight simulators.</p>
+    <p>There were different VAs one could join (Virtual Airlines) and they all shared one common issue: where do we get the schedules from the real world airline?</p>
+    <p>I wasn't aware of any of this until I was COO of a Scandinavian virtual airlines. The CEO was talking about how expensive a schedule pull was and then it hit me, why do we even have to pay for it when services like Flightradar24 are available for free?</p>
+    <p>I set out to create the first completely free schedule puller and released it.</p>
+    <p>It must've been the slowest release at the time and the tool didn't gain traction until nearly a year after (the project then probably started being indexed by search engines). It is now my most famous repository on Github. To this day I still get PMs wondering if I still support it and it always warms my heart that people are still using my tool.</p>
 </div>
