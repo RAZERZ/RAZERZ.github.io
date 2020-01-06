@@ -86,7 +86,7 @@ a {
 .mostPop ul li, .personalSelect ul li {
     display: block;
     margin-bottom: 2%;
-    width: 30%;
+    width: 400px;
     float: left;
     margin-right: 5%;
     padding: 2%;
@@ -194,6 +194,15 @@ a {
 @media screen and (max-width: 518px) {
     #navBar .navChild {
         font-size: 0.7em;
+    }
+
+    .mostPop ul li, .personalSelect ul li {
+        width: 330px;
+        margin-left: -35px;
+    }
+
+    .mostPop ul li span:nth-child(2), .personalSelect ul li span:nth-child(2) {
+        width: 75% !important;
     }
 }
 

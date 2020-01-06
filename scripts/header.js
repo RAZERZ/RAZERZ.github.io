@@ -1,4 +1,5 @@
 window.onload = function () {
+    pgAbout(document.getElementsByClassName("navChild")[4]);
     headerLoop();
     setInterval(headerLoop, 16000);
     function headerLoop() {
