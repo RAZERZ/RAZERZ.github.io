@@ -71,6 +71,7 @@ a {
 
 #main {
     padding: 1%;
+    overflow-x: hidden;
 }
 
 .personalSelect ul li {
