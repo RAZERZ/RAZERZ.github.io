@@ -5,6 +5,7 @@ html * {
 body {
     background: #212121;
     color: white;
+    overflow-x: hidden;
 }
 
 hr {
@@ -170,11 +171,17 @@ a {
 .timeLineContent {
     display: list-item;
     margin-left: 20px;
-    font-size: 1.18vw;
+    font-size: 1em;
 }
 
 .timeLineContent.bottom {
     margin-top: 80px;
+}
+
+@media screen and (max-width: 640px) {
+    .timeLineContent {
+        font-size: 2.3vw;
+    }
 }
 
 @media screen and (max-width: 518px) {
