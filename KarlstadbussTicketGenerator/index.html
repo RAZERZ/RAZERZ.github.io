@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Rami Abou Zahra - Karlstadbuss Ticket Generator</title>
+
+    <link rel="stylesheet" href="stylesheet/global.css" type="text/css">
+</head>
+<body>
+
+    <div id="container">
+        <div class="topBar">
+            <img style="float: left; width: 7%; height: auto;" src="extras/staticImgs/travel_type_skolungdom_black.png">
+            <div class="topBarText">
+                <h1>SKOLUNGDOM</h1>
+                <p>ENKEL</p>
+            </div>
+            <div class="topBarRight">
+                <div class="ticketNumberContainer">
+                    <span>1</span>
+                    <span>/</span>
+                    <span>1</span>
+                </div>
+                <span>16.00 KR</span>
+            </div>
+        </div>
+        <div class="karlstadbuss">
+            <p>KARLSTADBUSS</p>
+            <hr>
+        </div>
+        <div class="timer">
+            <div class="timerContainer">
+                <span class="countDown">00:59:00</span>
+                <div class="timeGlassChart"></div>
+            </div>
+        </div>
+        <div class="bottomContent">
+            <div class="validityContainer">
+                <p style="color: #8c8b8b; font-size: 2em; margin-bottom: 2%;">GILTIG</p>
+                <div class="validityDate">
+                    <div class="currDate">
+                        <span>2020-01-07 08:33</span>
+                    </div>
+                    <div class="expiredDate">
+                        <span>2020-01-07 09:33</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ticketVerificationAnimation">
+                <div class="currTime">
+                    <span></span>
+                </div>
+                <div class="ticketCode">
+                    <span>3167539</span>
+                </div>
+                <div class="gradientContainer"></div>
+                <div class="arrowsContainer"></div>
+            </div>
+            <div class="phoneContainer">
+                <img src="extras/staticImgs/skanetrafiken_ticket_phone.png">
+                <a href="tel:+46545404600">054 540 46 00</a>
+            </div>
+            <div class="logoContainer">
+                <img src="extras/staticImgs/karlstadsbuss_logo_ticket_front.png">
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <script src="countDownTimer.js"></script>
+</footer>
+</html>

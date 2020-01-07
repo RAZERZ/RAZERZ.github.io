@@ -1,0 +1,279 @@
+body {
+    background-image: url("../extras/staticImgs/skanetrafiken_ticket_background_texture.png");
+    background-repeat: repeat;
+    font-family: ocrb;
+}
+
+#container {
+    padding: 3%;
+}
+
+.topBarText {
+    margin-left: 8%;
+}
+
+.topBarText h1 {
+    margin: unset;
+    line-height: 1em;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+.topBarText p {
+    margin-top: -2%;
+    margin-left: 10px;
+    font-size: 2.2em;
+    font-weight: 100;
+}
+
+.topBarRight {
+    position: absolute;
+    top: 3%;
+    right: 20px;
+}
+
+.ticketNumberContainer {
+    width: 150px;
+    display: block;
+    float: right;
+    background-color: #e3e3e3;
+    text-align: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.ticketNumberContainer span {
+    display: unset !important;
+    font-size: 2.2em;
+}
+
+.topBarRight span {
+    display: block;
+    font-size: 2.2em;
+}
+
+.karlstadbuss {
+    margin-top: 10%;
+    padding-left: 1%;
+}
+
+.karlstadbuss p {
+    margin-bottom: unset;
+    font-size: 4em;
+    line-height: 50px;
+}
+
+.karlstadbuss hr {
+    color: #cacaca;
+    margin-top: unset;
+}
+
+.timer {
+    text-align: center;
+}
+
+.timerContainer {
+    width: 90%;
+    margin: auto;
+    height: 280px;
+    margin-top: 35%;
+    border: 7px solid #bdbdbd;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.countDown {
+    font-size: 8em;
+    display: block;
+    line-height: 280px;
+    font-family: arial;
+    width: 75%;
+    float: left;
+}
+
+.timeGlassChart {
+    background-image: linear-gradient(to right, transparent 50%, #e3e3e3 0) !important;
+    width: 100px;
+    height: 100px;
+    margin-right: 4%;
+    margin-top: 70px;
+    border-radius: 50%;
+    background: white;
+    border: 10px #e3e3e3 solid;
+    float: right;
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+    transform: rotate(1turn);
+}
+
+.bottomContent {
+    position: absolute;
+    width: 90%;
+    bottom: 0px;
+}
+
+.validityContainer {
+    margin-bottom: 4%;
+}
+
+.validityDate {
+    width: 100%;
+    height: 85px;
+    background-image: url("../extras/staticImgs/skanetrafiken_ticket_validity_background.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.currDate, .expiredDate {
+    float: left;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+}
+
+.currDate span, .expiredDate span {
+    font-family: arial;
+    font-size: 2em;
+    line-height: 250%;
+    color: #4a4a4a;
+}
+
+.expiredDate {
+    margin-left: 10%;
+}
+
+.ticketVerificationAnimation {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin: auto;
+    border: 5px solid grey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.currTime {
+    position: absolute;
+    color: white;
+    z-index: 99;
+    margin-left: 5%;
+    line-height: 300px;
+    font-family: arial_regular;
+    font-size: 10em;
+    text-shadow: 2px 0 #242424, 0 2px #242424, 2px 0 #242424, 0 -2px #242424;
+}
+
+.ticketCode {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    font-size: 2em;
+    color: white;
+    z-index: 99;
+    font-family: arial_regular;
+    text-shadow: 2px 0 #242424, 0 2px #242424, 2px 0 #242424, 0 -2px #242424;
+}
+
+.gradientContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: rgb(5,116,203);
+    background: linear-gradient(90deg, rgba(0, 123, 221, 0.94) 40%, rgba(86, 164, 42, 0.94) 50%, rgba(190, 217, 0, 0.94) 60%)
+}
+
+.arrowsContainer {
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    background-image: url("../extras/staticImgs/skanetrafiken_ticket_verification_arrow.png");
+    background-repeat: repeat;
+    background-size: 7%;
+    -webkit-animation: ticketVerificationAnimation 0.7s infinite linear;
+    -o-animation: ticketVerificationAnimation 0.7s infinite linear;
+    animation: ticketVerificationAnimation 0.7s infinite linear;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.phoneContainer {
+    float: left;
+    width: 21%;
+    height: 40px;
+    margin-top: 2%;
+    background: #e3e3e3;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.phoneContainer img {
+    width: 13px;
+    height: auto;
+    margin-left: 5%;
+}
+
+.phoneContainer a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-family: arial;
+    font-size: 1.4em;
+    line-height: 175%;
+}
+
+.logoContainer {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.logoContainer img {
+    width: 400px;
+    height: 80px;
+}
+
+@keyframes ticketVerificationAnimation {
+    from {
+        top: -100%;
+        left: -100%;
+    }
+    to {
+        top: -56.5%;
+        left: -114.9%;
+    }
+}
+
+@font-face {
+    font-family: "ocrb";
+    src: url("../extras/fonts/ocrb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "arial_regular";
+    src: url("../extras/fonts/arial.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "franklin_book";
+    src: url("../extras/fonts/franklin_gothic_book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "franklin_condensed";
+    src: url("../extras/fonts/franklin_gothic_condensed.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "franklin_medium";
+    src: url("../extras/fonts/franklin_gothic_medium.ttf") format("truetype");
+}
