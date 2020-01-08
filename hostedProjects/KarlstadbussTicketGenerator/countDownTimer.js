@@ -1,6 +1,5 @@
-var d = document.documentElement;
-
 function openFullscreen() {
+    var d = document.documentElement;
     if (d.requestFullscreen) {
         d.requestFullscreen();
     } else if (d.mozRequestFullScreen) { /* Firefox */
@@ -15,7 +14,6 @@ function openFullscreen() {
 window.onload = function() {
     alert("By continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes.");
     document.body.setAttribute("style", "opacity: 1;");
-    document.body.onclick = function() {openFullscreen()};
 };
 
 var countDownEl = document.getElementsByClassName("countDown")[0];
