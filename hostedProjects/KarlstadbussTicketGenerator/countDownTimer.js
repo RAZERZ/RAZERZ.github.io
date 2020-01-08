@@ -14,7 +14,7 @@ function openFullscreen() {
 
 window.onload = function() {
     openFullscreen();
-    alert("Hey");
+    alert("By continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes.");
     document.body.setAttribute("style", "opacity: 1;");
 
 };
