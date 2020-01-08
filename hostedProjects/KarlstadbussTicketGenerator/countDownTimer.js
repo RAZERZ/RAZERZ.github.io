@@ -10,7 +10,7 @@ function openFullscreen(el) {
         d.msRequestFullscreen();
     }
 
-    el.setAttribute("style", "display: none;");
+    el.parentNode.removeChild(el);
 }
 
 window.onload = function() {
