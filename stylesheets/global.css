@@ -191,6 +191,10 @@ a {
         font-size: 0.7em;
     }
 
+    .hostedProjects ul li a {
+        font-size: 0.8em;
+    }
+
     .hostedProjects ul li, .mostPop ul li, .personalSelect ul li {
         width: 330px;
         margin-left: -35px;
