@@ -191,12 +191,12 @@ a {
         font-size: 0.7em;
     }
 
-    .mostPop ul li, .personalSelect ul li {
+    .hostedProjects ul li, .mostPop ul li, .personalSelect ul li {
         width: 330px;
         margin-left: -35px;
     }
 
-    .mostPop ul li span:nth-child(2), .personalSelect ul li span:nth-child(2) {
+    .hostedProjects ul li span:nth-child(2), .mostPop ul li span:nth-child(2), .personalSelect ul li span:nth-child(2) {
         width: 75% !important;
     }
 }
