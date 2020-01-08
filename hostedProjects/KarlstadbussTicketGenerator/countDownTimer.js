@@ -1,15 +1,10 @@
 function openFullscreen(el) {
     el.parentNode.removeChild(el);
     var d = document.documentElement;
-    if (d.requestFullscreen) {
         d.requestFullscreen();
-    } else if (d.mozRequestFullScreen) { /* Firefox */
         d.mozRequestFullScreen();
-    } else if (d.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
         d.webkitRequestFullscreen();
-    } else if (d.msRequestFullscreen) { /* IE/Edge */
         d.msRequestFullscreen();
-    }
 }
 
 window.onload = function() {
