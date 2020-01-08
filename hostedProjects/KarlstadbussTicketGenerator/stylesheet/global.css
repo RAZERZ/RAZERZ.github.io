@@ -243,6 +243,26 @@ body {
     height: 80px;
 }
 
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+    zoom: 40%;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+    zoom: 40%;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+    zoom: 40%;
+}
+
+/* Standard syntax */
+:fullscreen {
+    zoom: 40%;
+}
+
 @keyframes ticketVerificationAnimation {
     from {
         top: -100%;
