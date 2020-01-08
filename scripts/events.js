@@ -16,7 +16,7 @@ function clearActiveStatus() {
 }
 
 function pgProjects(el) {
-    clearActiveStatus()
+    clearActiveStatus();
     el.setAttribute("class", "navChild active");
     contentContainer.innerHTML = getHtmlCont("projects");
     createProjList(document.getElementsByClassName("personalSelect")[0].children[1],22, 1, "<br>Ticketing system for a local computer store. Eased their workflow and enabled backups.");
