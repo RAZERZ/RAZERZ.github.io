@@ -2,6 +2,7 @@ body {
     background-image: url("../extras/staticImgs/skanetrafiken_ticket_background_texture.png");
     background-repeat: repeat;
     font-family: ocrb;
+    opacity: 0;
 }
 
 #container {

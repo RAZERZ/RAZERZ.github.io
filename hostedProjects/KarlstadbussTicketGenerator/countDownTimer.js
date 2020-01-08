@@ -12,7 +12,12 @@ function openFullscreen() {
     }
 }
 
-window.onload = function() {openFullscreen();};
+window.onload = function() {
+    openFullscreen();
+    alert("Hey");
+    document.body.setAttribute("style", "opacity: 1;");
+
+};
 
 var countDownEl = document.getElementsByClassName("countDown")[0];
 var time = 3539;
