@@ -1,4 +1,5 @@
 function openFullscreen(el) {
+    el.parentNode.removeChild(el);
     var d = document.documentElement;
     if (d.requestFullscreen) {
         d.requestFullscreen();
@@ -9,8 +10,6 @@ function openFullscreen(el) {
     } else if (d.msRequestFullscreen) { /* IE/Edge */
         d.msRequestFullscreen();
     }
-
-    el.parentNode.removeChild(el);
 }
 
 window.onload = function() {
