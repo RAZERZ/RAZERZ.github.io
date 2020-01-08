@@ -13,7 +13,7 @@ function openFullscreen(el) {
 }
 
 window.onload = function() {
-    alert("By continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes.");
+    alert("By continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes. Made by Rami Abou Zahra, All rights reserved.");
     document.body.setAttribute("style", "opacity: 1;");
 };
 
