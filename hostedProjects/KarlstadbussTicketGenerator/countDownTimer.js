@@ -1,4 +1,4 @@
-function openFullscreen() {
+function openFullscreen(el) {
     var d = document.documentElement;
     if (d.requestFullscreen) {
         d.requestFullscreen();
@@ -9,6 +9,8 @@ function openFullscreen() {
     } else if (d.msRequestFullscreen) { /* IE/Edge */
         d.msRequestFullscreen();
     }
+
+    el.setAttribute("style", "display: none;");
 }
 
 window.onload = function() {
