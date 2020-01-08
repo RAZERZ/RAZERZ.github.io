@@ -1,19 +1,14 @@
 var d = document.documentElement;
 
 function openFullscreen() {
-    if (d.requestFullscreen) {
-        d.requestFullscreen();
-    } else if (d.mozRequestFullScreen) { /* Firefox */
-        d.mozRequestFullScreen();
-    } else if (d.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-        d.webkitRequestFullscreen();
-    } else if (d.msRequestFullscreen) { /* IE/Edge */
-        d.msRequestFullscreen();
-    }
+    d.requestFullscreen();
+    d.mozRequestFullScreen();
+    d.webkitRequestFullscreen();
+    d.msRequestFullscreen();
 }
 
 window.onload = function() {
-    alert("By continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes.");
+    alert("Save tBy continuing, you are hereby solely responsible for any consequences when using this online site. I take no responsibility whatsoever. This shall only be used for development processes.");
     document.body.setAttribute("style", "opacity: 1;");
     openFullscreen();
 };
