@@ -1,3 +1,5 @@
+//TODO: Modal instead of alert() box. Works on all browsers
+
 function openFullscreen(el) {
     el.parentNode.removeChild(el);
     var d = document.documentElement;
