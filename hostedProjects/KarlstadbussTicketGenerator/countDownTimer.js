@@ -18,10 +18,10 @@ var currDateEl = document.getElementsByClassName("currDate")[0].children[0];
 var currTimeEl = document.getElementsByClassName("currTime")[0].children[0];
 var expiredDateEl = document.getElementsByClassName("expiredDate")[0].children[0];
 var date = new Date();
-var currTime = ("0" + date.getHours()).slice(-2) + ":" + ("0" + date.getMinutes()).slice(-2);
-var currDate = date.getFullYear() + "-" + ("0" + (date.getMonth() + 1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2);
-var validTime = ("0" + date.getHours()).slice(-2) + ":" + (("0" + date.getMinutes()).slice(-2) -1);
-var endTime = (parseInt(("0" + date.getHours()).slice(-2)) +1) + ":" + (("0" + date.getMinutes()).slice(-2) -1);
+var currTime = (date.getHours()<10?'0':'') + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
+var currDate = date.getFullYear() + "-" + (date.getMonth()<10?'0':'') + (date.getMonth()+1) + "-" + (date.getDate()<10?'0':'') + date.getDate();
+var validTime = (date.getHours()<10?'0':'') + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
+var endTime = (parseInt((date.getHours()<10?'0':'') + date.getHours())+1) + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
 
 currDateEl.innerHTML = currDate + " " + validTime;
 currTimeEl.innerHTML = currTime;
