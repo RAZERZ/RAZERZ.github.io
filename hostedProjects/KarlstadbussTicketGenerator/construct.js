@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    if(window.navigator.standalone) {
+    if(window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
         document.body.innerHTML = '<div style="background: red; padding: 10%; "><p style="font-size: 6em; margin: unset; text-align: center;">Instructions</p></div><div style=" color: white; font-size: 3em; padding: 10%;"><p>For best experience (and because I could not figure out how the fullscreen function works in IOS), <span style="color: lime; font-weight: bolder;">save the site to your home screen and launch it from there.</span><p>You will continue to see this message until you do so.</p><p>Made by Rami Abou Zahra, All rights reserved.</p></p></div></div>';
     }
     else {
