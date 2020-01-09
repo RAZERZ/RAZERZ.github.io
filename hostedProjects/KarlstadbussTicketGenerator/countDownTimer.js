@@ -1,14 +1,3 @@
-//TODO: Modal instead of alert() box. Works on all browsers
-
-function openFullscreen(el) {
-    el.parentNode.removeChild(el);
-    var d = document.documentElement;
-        d.requestFullscreen();
-        d.mozRequestFullScreen();
-        d.webkitRequestFullscreen();
-        d.msRequestFullscreen();
-}
-
 var countDownEl = document.getElementsByClassName("countDown")[0];
 var time = 3539;
 var footer = document.getElementsByTagName("footer")[0];
