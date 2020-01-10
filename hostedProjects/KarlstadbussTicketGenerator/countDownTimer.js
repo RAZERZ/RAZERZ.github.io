@@ -20,7 +20,7 @@ var expiredDateEl = document.getElementsByClassName("expiredDate")[0].children[0
 var date = new Date();
 var currTime = (date.getHours()<10?'0':'') + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
 var currDate = date.getFullYear() + "-" + (date.getMonth()<10?'0':'') + (date.getMonth()+1) + "-" + (date.getDate()<10?'0':'') + date.getDate();
-var validTime = (date.getHours()<10?'0':'') + date.getHours() + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
+var validTime = (parseInt((date.getHours()<10?'0':'') + date.getHours())-1) + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
 var endTime = (parseInt((date.getHours()<10?'0':'') + date.getHours())+1) + ":" + (date.getMinutes()<10?'0':'') + date.getMinutes();
 
 currDateEl.innerHTML = currDate + " " + validTime;
