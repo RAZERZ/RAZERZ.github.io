@@ -185,7 +185,7 @@ body {
     height: 100%;
     z-index: 9;
     background: rgb(5,116,203);
-    background: linear-gradient(90deg, rgba(0, 123, 221, 0.94) 40%, rgba(86, 164, 42, 0.94) 50%, rgba(190, 217, 0, 0.94) 60%)
+    background: linear-gradient(90deg, rgba(0, 132, 237, 0.9) 20%, rgba(59, 162, 97, 0.9) 50%, rgba(190, 217, 0, 0.90) 65%)
 }
 
 .arrowsContainer {
@@ -196,7 +196,7 @@ body {
     left: -100%;
     background-image: url("../extras/staticImgs/skanetrafiken_ticket_verification_arrow.png");
     background-repeat: repeat;
-    background-size: 7%;
+    background-size: 6%;
     -webkit-animation: ticketVerificationAnimation 0.7s infinite linear;
     -o-animation: ticketVerificationAnimation 0.7s infinite linear;
     animation: ticketVerificationAnimation 0.7s infinite linear;
@@ -268,8 +268,8 @@ body {
         left: -100%;
     }
     to {
-        top: -56.5%;
-        left: -114.9%;
+        top: -62.5%;
+        left: -112.9%;
     }
 }
 
