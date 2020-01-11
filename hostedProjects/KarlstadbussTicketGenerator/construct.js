@@ -51,7 +51,7 @@ function randomGradientOnload() {
         break;
     }
 
-    switch (getRandomInt(2)) {
+/*    switch (getRandomInt(2)) {
         case 0:
             arrowsContainer.setAttribute("style", "-webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);");
         break;
@@ -59,4 +59,5 @@ function randomGradientOnload() {
             arrowsContainer.setAttribute("style", "-webkit-transform: rotate(45deg); -moz-transform: rotate(135deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);");
         break;
     }
+ */
 }
