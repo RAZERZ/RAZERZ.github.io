@@ -22,10 +22,6 @@ button {
     font-weight: bolder;
 }
 
-button:hover, button:focus {
-    background-color: #27ae60;
-}
-
 button > * {
     position: relative;
 }
@@ -58,7 +54,7 @@ button.acceptBtn {
     background-color: #e74c3c;
 }
 
-button.acceptBtn:hover, button.acceptBtn:focus {
+button.acceptBtn:hover {
     background-color: #27ae60;
 }
 
