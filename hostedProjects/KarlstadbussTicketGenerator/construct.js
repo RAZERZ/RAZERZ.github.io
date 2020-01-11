@@ -34,8 +34,9 @@ function closeModal(modalEl) {
 
 function randomGradientOnload() {
     var gradientElement = document.getElementsByClassName("gradientContainer")[0];
+    var arrowsContainer = document.getElementsByClassName("arrowsContainer")[0];
 
-    switch (getRandomInt(3)) {
+    switch (getRandomInt(4)) {
         case 0:
             gradientElement.setAttribute("style", "background: linear-gradient(90deg, rgba(34,174,251,0.9) 29%, rgba(254,136,26,0.9) 67%);");
         break;
@@ -48,5 +49,9 @@ function randomGradientOnload() {
         case 3:
             gradientElement.setAttribute("style", "background: linear-gradient(90deg, rgba(255,136,27,0.9) 29%, rgba(129,16,194,0.9) 67%);");
         break;
+    }
+
+    switch (getRandomInt(2)) {
+
     }
 }
