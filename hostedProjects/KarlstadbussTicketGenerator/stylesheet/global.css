@@ -93,14 +93,14 @@ body {
 }
 
 .timeGlassChart {
-    background-image: linear-gradient(to right, transparent 50%, #e3e3e3 0) !important;
+    background-image: linear-gradient(to right, transparent 50%, #c5c5c5 0) !important;
     width: 100px;
     height: 100px;
     margin-right: 4%;
     margin-top: 70px;
     border-radius: 50%;
     background: white;
-    border: 10px #e3e3e3 solid;
+    border: 10px #c5c5c5 solid;
     float: right;
     -webkit-transform: rotate(1turn);
     -moz-transform: rotate(1turn);
