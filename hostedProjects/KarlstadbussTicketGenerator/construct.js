@@ -52,6 +52,11 @@ function randomGradientOnload() {
     }
 
     switch (getRandomInt(2)) {
-
+        case 0:
+            arrowsContainer.setAttribute("style", "-webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -ms-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg);");
+        break;
+        case 1:
+            arrowsContainer.setAttribute("style", "-webkit-transform: rotate(45deg); -moz-transform: rotate(135deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);");
+        break;
     }
 }
