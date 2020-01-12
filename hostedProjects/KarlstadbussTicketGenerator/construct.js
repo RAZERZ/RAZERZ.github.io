@@ -36,7 +36,7 @@ function randomGradientOnload() {
     var gradientElement = document.getElementsByClassName("gradientContainer")[0];
     var arrowsContainer = document.getElementsByClassName("arrowsContainer")[0];
 
-    switch (getRandomInt(4)) {
+    switch (getRandomInt(3)) {
         case 0:
             gradientElement.setAttribute("style", "background: linear-gradient(90deg, rgba(34,174,251,0.9) 29%, rgba(254,136,26,0.9) 67%);");
         break;
@@ -45,9 +45,6 @@ function randomGradientOnload() {
         break;
         case 2:
             gradientElement.setAttribute("style", "background: linear-gradient(90deg, rgba(32,174,250,0.9) 29%, rgba(253,45,157,0.9) 67%);");
-        break;
-        case 3:
-            gradientElement.setAttribute("style", "background: linear-gradient(90deg, rgba(255,136,27,0.9) 29%, rgba(129,16,194,0.9) 67%);");
         break;
     }
 
