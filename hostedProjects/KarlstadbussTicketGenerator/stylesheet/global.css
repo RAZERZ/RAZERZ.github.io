@@ -90,11 +90,12 @@ button.acceptBtn:hover {
     width: 150px;
     display: block;
     float: right;
-    background-color: #e3e3e3;
+    background-color: #f0f0f0;
     text-align: center;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-radius: 15px;
+    border-radius: 7px;
+    border: 2px solid #d8d8d8;
 }
 
 .ticketNumberContainer span {
@@ -103,7 +104,12 @@ button.acceptBtn:hover {
 }
 
 .price, .ticketType {
-    color: #7c7c7c;
+    color: #717171;
+}
+
+.price {
+    margin-top: 40%;
+    font-weight: 100;
 }
 
 .topBarRight span {
@@ -112,7 +118,7 @@ button.acceptBtn:hover {
 }
 
 .karlstadbuss {
-    margin-top: 10%;
+    margin-top: 15%;
     padding-left: 1%;
 }
 
@@ -132,21 +138,20 @@ button.acceptBtn:hover {
 }
 
 .timerContainer {
-    width: 90%;
+    width: 80%;
     margin: auto;
-    height: 280px;
-    margin-top: 35%;
+    height: 230px;
+    margin-top: 50%;
     border: 10px solid #d8d8d8;
     border-radius: 30px;
-    background-color: #fff;
 }
 
 .countDown {
-    font-size: 8em;
+    font-size: 6em;
     display: block;
-    line-height: 280px;
-    font-family: arial;
-    width: 75%;
+    line-height: 230px;
+    font-family: arial_regular;
+    width: 60%;
     float: left;
 }
 
@@ -154,8 +159,8 @@ button.acceptBtn:hover {
     background-image: linear-gradient(to right, transparent 50%, #c5c5c5 0) !important;
     width: 100px;
     height: 100px;
-    margin-right: 4%;
-    margin-top: 70px;
+    margin-right: 5%;
+    margin-top: 50px;
     border-radius: 50%;
     background: white;
     border: 10px #c5c5c5 solid;
@@ -194,7 +199,7 @@ button.acceptBtn:hover {
 }
 
 .currDate span, .expiredDate span {
-    font-family: arial;
+    font-family: arial_regular;
     font-size: 2em;
     line-height: 250%;
 }
@@ -208,7 +213,7 @@ button.acceptBtn:hover {
     overflow: hidden;
     height: 300px;
     margin: auto;
-    border: 10px solid #e3e8ec;
+    border: 7px solid #e3e8ec;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -229,11 +234,11 @@ button.acceptBtn:hover {
     position: absolute;
     bottom: 4%;
     right: 4%;
-    font-size: 2em;
+    font-size: 3em;
     color: white;
     z-index: 99;
-    font-family: arial_regular;
     text-shadow: 2px 0 #242424, 0 2px #242424, 2px 0 #242424, 0 -2px #242424;
+    font-family: ocrb;
 }
 
 .gradientContainer {
@@ -279,7 +284,7 @@ button.acceptBtn:hover {
 .phoneContainer a {
     text-decoration: none;
     color: #4a4a4a;
-    font-family: arial;
+    font-family: arial_regular;
     font-size: 1.4em;
     line-height: 175%;
 }
