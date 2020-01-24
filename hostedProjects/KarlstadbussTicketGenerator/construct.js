@@ -3,15 +3,20 @@ window.onload = function() {
     var isInWebAppChrome = (window.matchMedia('(display-mode: standalone)').matches);
 
     if(isInWebAppiOS === false && isInWebAppChrome === false) {
-        //document.body.innerHTML = "";
-        createModal('<div style="background: #282828; padding: 10%; "><p style="font-size: 6em; font-weight: bolder; margin: unset; text-align: center;">Instruktioner</p></div><div style="font-size: 3em; padding: 10%;"><h1 style="margin: unset; font-size: 1.5em;">iOS</h1><p>1. Öppna länken i Safari</p><p>2. Klicka på "dela" knappen.</p><p>3. Scrolla ner och klicka på "lägg till på hemskärmen"</p><h1 style="margin: unset; font-size: 1.5em;">Android</h1><p>1. Öppna länken i Chrome.</p><p>2. Klicka på de 3 plupparna i det högra hörnet.</p><p>3. Klicka på "lägg till på startskärmen"</p></div></div>');
+        document.body.innerHTML = "";
+        createModal('<div style="background: #282828; padding: 10%; "><p style="font-size: 6em; font-weight: bolder; margin: unset; text-align: center;">Nyheter</p></div><div style="font-size: 3em; padding: 10%;"><h1 style="margin: unset; font-size: 1.5em;">iOS</h1><p>1. Öppna länken i Safari</p><p>2. Klicka på "dela" knappen.</p><p>3. Scrolla ner och klicka på "lägg till på hemskärmen"</p><h1 style="margin: unset; font-size: 1.5em;">Android</h1><p>1. Öppna länken i Chrome.</p><p>2. Klicka på de 3 plupparna i det högra hörnet.</p><p>3. Klicka på "lägg till på startskärmen"</p></div></div>');
     }
     else {
-        createModal('<div style="background: #282828; padding: 10%; "><p style="font-size: 6em; font-weight: bolder; margin: unset; text-align: center;">Villkor</p></div><div style="font-size: 3em; padding: 10%;"><p>Genom att fortsätta är du härmed själv ansvarig för eventuella konsekvenser när du använder denna onlinesida.<p>Jag tar inget ansvar överhuvudtaget. Detta ska endast användas för utvecklings- och eller inlärningsändamål.</p><p>Made by Rami Abou Zahra, All rights reserved.</p></p></div><button class="acceptBtn" onclick="closeModal(this)">ACCEPT</button></div>');
+        document.body.innerHTML = "";
+        createModal('<div style="background: #282828; padding: 10%; "><p style="font-size: 6em; font-weight: bolder; margin: unset; text-align: center;">Nyheter</p></div><div style="font-size: 3em; padding: 10%;"><p>Karlstadbuss bad mig stänga ner denna sida... Sidan är tillsvidare stängd men ni kan gärna surfa runt på min sida <a href="razerz.github.io"> här</a>.</p><p>Made by Rami Abou Zahra, All rights reserved.</p></p></div><button class="acceptBtn" onclick="closeModal(this)">ACCEPT</button></div>');
     }
 
     randomGradientOnload();
 };
+
+function redir() {
+    console.log("TODO: Redirect;");
+}
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
