@@ -1,5 +1,5 @@
 window.onload = function() {
-
+    createModal('<div style="background: #282828; padding: 10%; "><p style="font-size: 6em; font-weight: bolder; margin: unset; text-align: center;">Villkor</p></div><div style="font-size: 3em; padding: 10%;"><p>Karlstadbuss bad mig stänga ner denna sida... Sidan är tillsvidare stängd men ni kan gärna surfa runt på min sidan <a href="razerz.github.io"> här.</a></p><p>Made by Rami Abou Zahra, All rights reserved.</p></p></div><button class="acceptBtn" onclick="">Attans</button></div>');
     randomGradientOnload();
 };
 
