@@ -54,8 +54,8 @@ function pgContact(el) {
     contentContainer.innerHTML = getHtmlCont("contact")
 }
 
-function pgIdeas(el) {
+function pgTestimonials(el) {
     clearActiveStatus();
     el.setAttribute("class", "navChild active");
-    contentContainer.innerHTML = getHtmlCont("ideas");
+    contentContainer.innerHTML = getHtmlCont("testimonials");
 }
