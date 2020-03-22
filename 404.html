@@ -13,7 +13,7 @@
 
 <p style="width:40%;margin:auto;text-align:center">The good 'ol embarrassing 404 error code. You all know what it does and what it means, but in case you don't, the file or location you were looking for does not exist.</p>
 
-<div style="width:25%;display:block;margin:auto;text-align:center">
+<div style="width:25%;display:block;margin:auto;cursor:pointer;text-align:center">
     <svg viewBox="0 0 160 160">
         <g fill="none">
             <rect fill="#212121" x="0" y="0" width="160" height="160"></rect>
@@ -33,6 +33,12 @@
 </div>
 
 <p style="width:35%;float:right">- Yours truly, Rami Abou Zahra</p>
+
+<script>
+    document.getElementsByTagName("div")[0].addEventListener("click", function() {
+        location.replace("https://razerz.github.io");
+    });
+</script>
 
 </body>
 </html>
