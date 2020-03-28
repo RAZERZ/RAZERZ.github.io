@@ -8,9 +8,35 @@
         <span style="margin: 0 7%">Import</span>
         <span style="padding: 2% 6%;background:#434343;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px">Check</span>
     </div>
-    <div>
+    <div style="overflow:hidden">
         <p style="font-size:1.2em">Ready when you are</p>
         <button style="height: 40px">Start</button>
         <ul></ul>
     </div>
 </div>
+
+<script>
+    var demoButton = document.getElementsByTagName("button")[0];
+    var demoHeader = demoButton.parentElement.children[0];
+    var demoList = demoButton.parentElement.children[2];
+
+    demoButton.addEventListener("click", () => {
+        demoButton.style.background = "#34e234";
+        demoButton.innerHTML = '<div class="dotLoading"><span class="dotLoading a">.</span><span class="dotLoading b">.</span><span class="dotLoading c">.</span></div>';
+        demoHeader.innerHTML = "Crunching data...";
+
+        setTimeout(() => {
+            demoHeader.innerHTML = "Punish these punks!";
+            demoButton.setAttribute("style", demoButton.getAttribute("style") + " -webkit-transform: translateX(200%);-moz-transform: translateX(200%);-ms-transform: translateX(200%);-o-transform: translateX(200%);transform: translateX(200%);");
+            setTimeout(()=>{demoButton.setAttribute("style", demoButton.getAttribute("style") + " display:none");demoList.style.opacity = 1;}, 600);
+            const nameList = ['John Doe', 'Rami Abou Zahra', 'Alexander Jaxgård', 'Joe Mama'];
+            for (var i = 0; nameList.length > i; i++) {
+                var newList = document.createElement("li");
+                var newListText = document.createTextNode(nameList[i]);
+                newList.appendChild(newListText);
+                demoList.appendChild(newList);
+            }
+        }, 2000)
+    });
+
+</script>
